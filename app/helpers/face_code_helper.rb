@@ -1,0 +1,2 @@
+module FaceCodeHelper
+end

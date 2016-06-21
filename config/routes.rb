@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
+  get 'face_code/home'
+
   devise_for :users
 
-  root 'posts#index'
+  root 'face_code#home'
 
   resources :posts
 

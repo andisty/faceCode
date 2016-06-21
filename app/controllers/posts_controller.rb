@@ -7,6 +7,8 @@ class PostsController < ApplicationController
      post_params = params.require( :post ).permit( :content )
 
      @post = Post.new( content: post_params[:content] )
+     @post.user = current_user
+     @posts = Post.where( user: @user ).order( created_at: :desc )
 
      if @post.save
         redirect_to posts_path

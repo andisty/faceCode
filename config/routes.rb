@@ -8,7 +8,9 @@ Rails.application.routes.draw do
 
   root 'face_code#home'
 
-  resources :posts
+  resources :posts  do
+    resources :likes
+  end
 
 
 end

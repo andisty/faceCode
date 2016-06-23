@@ -1,7 +1,7 @@
-function selectResult(item) {
-  console.log(item);
-  var url = "/posts/" + item.value;
-  window.location.href = url;
+function selectResult (item) {
+  console.log(item)
+  var url = "/posts/" + item.value
+  window.location.href = url
 }
 
 function createSearch() {
@@ -12,7 +12,7 @@ function createSearch() {
       contentType: "application/json",
       dataType: "json"
     },
-    displayField: "title",
+    displayField: "content",
     onSelect: selectResult
   });
 }

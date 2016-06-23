@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   get 'face_code/home'
 
   devise_for :users
+  resources :users, only: [:index]
 
   root 'face_code#home'
 

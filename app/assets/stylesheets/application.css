@@ -5,3 +5,19 @@ main {
 .nav-wrapper {
   background-color: #C1272D;
 }
+
+.navbar-form {
+  @media (min-width: 768px) {
+    width: auto;
+    border: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    box-shadow: none;
+  }
+}
+
+.navbar-left {
+    float: right !important;
+  }

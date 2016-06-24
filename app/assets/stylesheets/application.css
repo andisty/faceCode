@@ -60,3 +60,9 @@ label {
 .likes {
   color: green;
 }
+
+.post-img {
+  background-image: url("http://www.pixelstalk.net/wp-content/uploads/2016/06/Matrix-Moving-Desktop-Background-Wallpaper.jpg");
+  background-size: cover;
+  background-position: center;
+}

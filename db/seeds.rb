@@ -23,3 +23,7 @@ Post.create( content: "My hamster resents me." , user: frank)
 Post.create( content: "Free market solves all problems."        , user: alice )
 Post.create( content: "Workers control the means of production.", user: anton )
 Post.create( content: "Can't we all just get along?"            , user: frank )
+
+users.each do | email, password |
+   User.create( email: email, password:password )
+end

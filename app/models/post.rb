@@ -8,3 +8,7 @@ class Post < ActiveRecord::Base
   end
 
 end
+def self.search(search)
+  where("name LIKE ?", "%#{search}%")
+  where("content LIKE ?", "%#{search}%")
+end

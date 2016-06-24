@@ -3,27 +3,17 @@
     <head>
         <title>FaceCode</title>
         <!-- Compiled and minified CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
-
-  <!-- Compiled and minified JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js">
-  </script>
-
+        <link rel="shortcut icon" type="image/jpeg" href="<%= asset_path('favico.jpg') %>" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
         <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
         <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
         <%= csrf_meta_tags %>
     </head>
     <body>
-
-      <!-- <p class="notice"><%= notice %></p>
-       <p class="alert"><%= alert %></p> -->
-
-
-        <%= render "layouts/header" %>
-
-        <main class="container">
-            <%= yield %>
-        </main>
-
+      <!-- <p class="notice"><%= notice %></p><p class="alert"><%= alert %></p> -->
+      <%= render "layouts/header" %>
+      <main class="container">
+          <%= yield %>
+      </main>
     </body>
 </html>

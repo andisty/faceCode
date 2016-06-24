@@ -1,9 +1,9 @@
-<header class="navbar navbar-fixed-top navbar-default">
-
+<header class="navbar-fixed">
     <nav>
         <div class="nav-wrapper">
             <%= link_to "FaceCode", '/', class: "brand-logo" %>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
+
               <li><%= link_to "Posts", posts_path %></li>
               <li><%= link_to "Users", users_path %></li>
               <% if user_signed_in? %>
@@ -12,6 +12,21 @@
               <% else %>
                 <li><%= link_to "Log In", new_user_session_path %></li>
               <% end %>
+
+                <li><%= link_to "Posts", posts_path %></li>
+                <% if !user_signed_in? %>
+                  <li><%= link_to "Log In", new_user_session_path %></li>
+                <% else %>
+                  <li><span class="navbar-text"><%= current_user.email %></span></li>
+                  <li><%= link_to "Log Out", destroy_user_session_path, :method => :delete %></li>
+                <% end %>
+                <li>
+                  <%= form_tag search_path, method: :get, class: "navbar-form navbar-left", role: "search", id: "searchForm" do %>
+                  <div class="form-group">
+                      <%= search_field_tag :query, params[:search], class: "form-control", placeholder: "Search posts...",  autocomplete: "off" %>
+                  </div>
+                  <% end %>
+                </li>
             </ul>
         </div>
     </nav>

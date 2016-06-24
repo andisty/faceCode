@@ -1,7 +1,68 @@
-main {
-   padding: 20px;
-}
-
 .nav-wrapper {
   background-color: #C1272D;
+}
+#query {
+  width: 350px;
+}
+.typeahead li {
+  background-color: black;
+}
+.typeahead li.active {
+  background-color: orange;
+}
+main {
+  padding: 20px;
+}
+
+strong {
+  color: green;
+}
+
+body {
+  background-image: url("http://images.medicaldaily.com/sites/medicaldaily.com/files/2016/03/02/matrix.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.form-signin-heading {
+  color: white;
+}
+
+.check {
+  color: white;
+}
+
+label {
+  color: white;
+}
+
+.col {
+  color: white;
+}
+
+.post_index {
+  color: white;
+}
+
+.welcome {
+  margin-right: 600px;
+  font-size: 80px;
+}
+
+.user-name {
+  color: orange;
+}
+
+.content {
+  color: white;
+}
+
+.likes {
+  color: green;
+}
+
+.post-img {
+  background-image: url("http://www.pixelstalk.net/wp-content/uploads/2016/06/Matrix-Moving-Desktop-Background-Wallpaper.jpg");
+  background-size: cover;
+  background-position: center;
 }

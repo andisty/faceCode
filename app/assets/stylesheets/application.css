@@ -1,5 +1,5 @@
 .nav-wrapper {
-  background-color: #C1272D;
+  background-color: #B71427;
 }
 #query {
   width: 350px;
@@ -19,33 +19,12 @@ strong {
 }
 
 body {
-  background-image: url("http://images.medicaldaily.com/sites/medicaldaily.com/files/2016/03/02/matrix.jpg");
-  background-size: cover;
-  background-position: center;
+  background-color: #F3FAB6;
 }
 
-.form-signin-heading {
-  color: white;
-}
 
-.check {
-  color: white;
-}
-
-label {
-  color: white;
-}
-
-.col {
-  color: white;
-}
-
-.post_index {
-  color: white;
-}
 
 .welcome {
-  margin-right: 600px;
   font-size: 80px;
 }
 
@@ -53,16 +32,7 @@ label {
   color: orange;
 }
 
-.content {
-  color: white;
-}
 
 .likes {
   color: green;
-}
-
-.post-img {
-  background-image: url("http://www.pixelstalk.net/wp-content/uploads/2016/06/Matrix-Moving-Desktop-Background-Wallpaper.jpg");
-  background-size: cover;
-  background-position: center;
 }
